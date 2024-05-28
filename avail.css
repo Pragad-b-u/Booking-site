@@ -1,0 +1,85 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+.bg-img{
+  background: url('railway.jpg');
+  height: 120vh;
+  background-size:cover ;
+  background-position: center;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 120%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 999;
+  height: 600px;
+  width: 700px;
+  text-align: center;
+  padding: 60px 32px;
+  background: rgba(255, 255, 255,0.09);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+.table-container{
+  padding: 0 10%;
+  margin: 40px auto 0;
+}
+.heading{
+  font-family: 'Poppins',sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #f1f1f1;
+  margin-bottom: 40px ;
+}
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead{
+  background-color: gray;
+}
+.table thead tr th{
+  font-size: 14px;
+  font-weight: medium;
+  letter-spacing: 0.35px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid #dee2e685;
+}
+.table tbody tr td{
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: BLACK;
+  background-color: #BCC6CC;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e685;
+  padding: 15px;
+  cursor: pointer;
+}
+.table tbody tr td a{
+  width: 130px;
+
+}
+.table tbody tr:nth-child(odd){
+  background-color: lightgray;
+}
+.table tbody tr:nth-child(even){
+  background-color: #ededed;
+}
